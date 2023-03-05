@@ -14,13 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $yarOfbirth = 2000;
+    $currentYear = 2023;
 
-Route::get('/contact', function () {
-    return view('products');
-});
+    $isAlone = false;
+    $age = $currentYear - $yarOfbirth;
 
-Route::get('/productList', function () {
-    return view('contact');
+    return view('welcome', ['age' => $age, 'alone' => $isAlone]);
 });
