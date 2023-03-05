@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $yarOfbirth = 2000;
-    $currentYear = 2023;
+    $arr = ['rodrigo', 'matheus', 'eduardo', 'matias'];
 
-    $isAlone = false;
-    $age = $currentYear - $yarOfbirth;
-
-    return view('welcome', ['age' => $age, 'alone' => $isAlone]);
+    return view(
+        'welcome',
+        [
+            'arr' => $arr,
+        ]
+    );
 });

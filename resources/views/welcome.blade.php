@@ -828,13 +828,9 @@
 
 <body class="antialiased">
     <h1>aplicação</h1>
-    @if ($age >= 18)
-    <p>você pode viajar sozinho</p>
-    @elseif ($age < 18 && $alone)
-    <p>você <strong>não</strong> pode viajar</p>
-    @elseif ($age < 18 && !$alone)
-    <p>você pode viajar</p>               
-    @endif
+    @for ($i = 0; $i < count($arr); $i++)
+        <h1>{{ $i }}: {{ $arr[$i] }}</h1>
+    @endfor
 </body>
 
 </html>
