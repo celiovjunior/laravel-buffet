@@ -16,10 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $arr = ['rodrigo', 'matheus', 'eduardo', 'matias'];
 
+    $numbersArr = [24, 36, 55, 12, 17, 59];
+
     return view(
         'welcome',
         [
             'arr' => $arr,
+            'numbersArr' => $numbersArr
         ]
     );
+});
+
+Route::get('/page', function () {
+    return view('page');
 });
