@@ -10,6 +10,6 @@
 <body>
   @yield('content')
   <footer>Made with ❤ by <a href="www.github.com/celiovjunior" target="_blank">Célio V. Júnior</a></footer>
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

@@ -27,6 +27,10 @@ Route::get('/', function () {
     );
 });
 
-Route::get('/page', function () {
-    return view('page');
+Route::get('/events', function () {
+    return view('events');
+});
+
+Route::get('/events/{id}', function ($id) {
+    return view('event', ['id' => $id]);
 });
