@@ -1,6 +1,11 @@
 @extends('layouts.main')
 
 @section('title', 'Event - Code Buffet')
+
   @section('content')
-  <h1>{{ $id }}</h1>
+  
+  @if ($id != null)
+      <p>exibindo produto: {{ $id }}</p>
+  @endif
+  
 @endsection

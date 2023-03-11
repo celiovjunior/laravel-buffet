@@ -32,7 +32,9 @@ Route::get('/page', function () {
 });
 
 Route::get('/events', function () {
-    return view('events');
+    $time = request('search');
+
+    return view('events', ['time' => $time]);
 });
 
 Route::get('/events/{id}', function ($id) {

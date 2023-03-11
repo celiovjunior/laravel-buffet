@@ -2,5 +2,9 @@
 
 @section('title', 'Code Buffet')
   @section('content')
-  <h1>events list</h1>
+  
+  @if ($time != '')
+      <p>search for {{ $time }}</p>
+  @endif
+
 @endsection
