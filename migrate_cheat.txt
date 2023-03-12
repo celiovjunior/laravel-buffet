@@ -1,0 +1,18 @@
+** adicionar novo campo na tabela **
+php artisan make:migration add_category_to_[nome_da_tabela]
+
+** ver status das migrations **
+php artisan migrate:status
+
+** desfazer inclusão de coluna **
+php artisan migrate:rollback
+
+** resetar tudo do banco **
+php artisan migrate:reset (CUIDADO!!)
+
+** fazer rollback e migrar novamente **
+php artisan migrate:refresh (CUIDADO!!)
+
+** deletar todos os dados e deixar tabelas zeradas **
+php artisan migrate:fresh (CUIDADO!!)
+
