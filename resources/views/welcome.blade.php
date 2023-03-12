@@ -2,4 +2,5 @@
 
 @section('title', 'Code Buffet')
     @section('content')
+
 @endsection
