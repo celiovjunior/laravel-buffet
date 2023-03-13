@@ -5,7 +5,7 @@
 
     <div id="event-create-container" class="col-md-6 offset-md">
         <h1>Create an event</h1>
-        <form action="/events" method="POST">
+        <form action="/events" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="title">Event</label>
@@ -14,6 +14,10 @@
             <div class="form-group">
                 <label for="description">Description</label>
                 <textarea name="description" id="description" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload banner</label>
+                <input type="file" id="image" name="image" class="form-control-file">
             </div>
             <div class="form-group">
                 <label for="price">Price</label>
