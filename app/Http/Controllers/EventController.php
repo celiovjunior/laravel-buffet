@@ -29,6 +29,6 @@ class EventController extends Controller
 
     $event->save();
 
-    return redirect('/');
+    return redirect('/')->with('msg', 'event added');
   }
 }
